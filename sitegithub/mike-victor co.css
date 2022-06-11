@@ -1,0 +1,40 @@
+
+.slider {
+ width:460px;
+ height: 420px;
+ overflow: hidden;
+margin-left: 5px auto;
+margin-right: 5px auto;
+}
+.slides {
+   width: calc(800px * 3);
+   animation: glisse 10s infinite;
+}
+.slide {
+    float: left;
+}
+
+@keyframes glisse {
+ 0% {
+      transform: translateX(0);
+    }
+ 10% {
+        transform: translateX(0);
+    }
+
+ 33% {
+        transform: translateX(-800px);
+    }
+ 43% {
+        transform: translateX(-800px);
+      }
+ 66% {
+        transform: translateX(-1600px);
+    }
+ 76% {
+        transform: translateX(-1600px);
+      }
+ 100% {
+        transform: translateX(0);
+     }
+}
